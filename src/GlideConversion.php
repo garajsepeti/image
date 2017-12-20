@@ -104,7 +104,7 @@ final class GlideConversion
         unlink($this->conversionResult);
 
         if ($this->directoryIsEmpty($conversionResultDirectory)) {
-            rmdir($conversionResultDirectory);
+            @rmdir($conversionResultDirectory);
         }
     }
 
